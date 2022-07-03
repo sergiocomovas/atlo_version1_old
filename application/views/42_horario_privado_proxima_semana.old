@@ -1,0 +1,239 @@
+<?php 
+
+///SEMANA PRÓXIMA
+
+echo '<th style="width:210px;" id="semana_proxima" style="border-radius: 0px 0px 0px 0px; margin:1;"  valign="top">
+
+<div class="p-1">
+
+<img style="display:none;"  width="96%"  src="https://v1.atlo.es/00_img/loot/loot_gris.gif">
+
+<div class="p-1" style="width:80%;"> 
+
+<i class="fa-xs fas fa-square"></i> Próxima semana
+
+</div>
+
+
+<ul style="display:none;"  class="mt-1 mb-1 list-group ">
+  <li class="bg-primary list-group-item rounded-0 d-flex justify-content-between align-items-center">
+
+    <button disabled type="button" class="rounded-0 btn btn-sm btn-secondary btn-block">Canjear Loot</button>
+
+  </li>
+</ul>
+
+<small><small>
+
+<div style="width: 15rem;" class="mb-2 border border-primary text-center">Semana '.$proxima_semana.'</div>
+
+<a href="https://api.whatsapp.com/send?phone=34645097624&text=Reserva_Clase_7am" target="_blank">
+
+<video class="mb-2" width="240px" autoplay muted loop>
+<source 
+src="https://v1.atlo.es/00_img/clase7.mp4"  type="video/mp4">
+
+</video></a><br>
+
+
+
+<video width="240px" autoplay muted loop>
+<source 
+src="https://v1.atlo.es/00_img/federate.mp4"  type="video/mp4">
+
+</video>
+
+
+
+
+
+<ul style="display:none;" class="list-group mt-1 mb-1">
+
+  <li class="bg-primary rounded-0 text-light list-group-item d-flex justify-content-between align-items-center">
+    
+    
+    Sesiones: ? <code>|</code>
+    Pendientes: ?
+  </li>
+  <li class="bg-light text-dark list-group-item d-flex justify-content-between align-items-center">
+    <code class="text-dark">Retos</code>
+    <span class="badge badge-secondary badge-pill">?</span> <span class="badge badge-secondary badge-pill">?</span> <span class="badge badge-secondary badge-pill">?</span>
+  </li>
+  <li class="bg-light text-dark list-group-item d-flex justify-content-between align-items-center">
+  <code class="text-dark">FLiga</code>
+  <span class="badge badge-secondary badge-pill">?</span> <span class="badge badge-secondary badge-pill">?</span><span class="badge badge-secondary badge-pill">?</span>
+</li>
+</ul>
+</small></small>
+
+</div>
+</th>
+
+
+
+<th style="background-color:#880E4F; vertical-align: text-top;     max-width: 10px;
+overflow: visible;
+text-overflow: ellipsis;
+white-space: nowrap;">';
+
+$url = 'https://v1.atlo.es/index.php/0rest/A_atlo_horario/semana_proxima_max_min/'.$proxima_semana;
+$data = file_get_contents($url);
+$max_proxima_semana = json_decode($data, true);
+
+// date_format(date_create($x_value['dias_date']),"d/m")
+
+echo' <h6 class="p-1 px-2">Semana del '.date_format(date_create($max_proxima_semana[0]['min']),"d/m").' al '.date_format(date_create($max_proxima_semana[0]['max']),"d/m").':</h6>
+
+</th>';
+
+
+//$ids_semana_proxima as $x => $x_value
+//echo '<th ></th>';
+
+foreach($ids_semana_proxima as $x => $x_value) 
+        
+{  
+  
+  echo '
+       
+<th style="vertical-align:bottom; padding: 5px 5px 5px 5px; background-color: #880E4F;" >
+
+
+<div id="manana'.$x_value['dias_id'].'"></div>
+
+        <div style="width:190px;" class="mb-1 card text-justify">
+        <div class="card-block p-1">
+        <div class="card-header"><h6>
+        '.$x_value['dias_nom'].'<br>'.date_format(date_create($x_value['dias_date']),"d/m").'</h6>';
+
+
+        //hacer una comprobación
+
+        //https://v1.atlo.es/index.php/0rest/A_atlo_reservas/def_lista_dias_estas/catxo99@gmail.com/192
+
+        $url =base_url().'index.php/0rest/A_atlo_reservas/def_lista_dias_estas/'.$cliente.'/'.$x_value['dias_id'];
+    
+        $datax = file_get_contents($url);
+
+        $lista_datax = json_decode($datax, false);
+        
+        $existe = isset($lista_datax->clases_hora);
+        
+
+        if ($existe==1){
+
+            $boton_etiqueta = "Cambiar";
+
+            
+
+            
+
+            echo '
+            <p 
+            style="
+            width: 115%;
+            margin-left: -1vw;
+            left: 50%;
+            line-height: 0.4;
+            "
+            
+            class="bg-warning text-primary">
+            
+            <span class="mx-1 badge badge-dark float-right mt-2"><a href="https://v1.atlo.es/index.php/0rest/A_atlo_reservas/def_delete_rapido/'.$cliente.'/'.$x_value['dias_id'].'/"><i class="fas fa-trash-alt"></i></a></span>
+            
+            <small style="color:#c5023c;"><i class="fas fa-star"></i>Reserva activa:<br><strong>'.substr ($lista_datax->clases_hora,0,5).'  ('.$lista_datax->clases_tipo.')<strong></small></small></p>';
+
+            }else{
+
+            $boton_etiqueta = "Asistir";
+
+
+            echo '
+            <p class="bg-secondary text-center"><small><small><small><i class="far fa-star"></i> Sin resevas<BR>en este día.</small></small></small></p>';
+
+            }
+
+        //$c_hora = $lista_datax->clases_hora;
+
+       
+
+        echo'
+        
+        </div>
+        <div class="card-body  text-ligth" style="
+        
+	    min-height:240px;
+        ">
+          
+        <p>Cliente Premium<br>
+        <small><small>Reserva ahora tu clase:</small></small></p>
+        
+        
+        <form id="form-px" action="https://v1.atlo.es/index.php/0rest/A_atlo_reservas/def_lista_diario/manana'.$x_value['dias_id'].'/borrado" method="POST">
+
+        <input type="hidden" form-control" name="listas_cont" id="" aria-describedby="helpId" value="+1">
+
+        <input type="hidden" class="form-control" name="qf" id="" aria-describedby="helpId" value="FALSE">
+      
+        <input type="hidden" class="form-control" name="clientes_id" id="" aria-describedby="helpId" value="'.$this->session->userdata('username').'">
+      
+        <input type="hidden" class="form-control" name="listas_data1" id="" aria-describedby="helpId" value="'.$clientes->clientes_nombrepublico.'">
+      
+        <input type="hidden" class="form-control" name="listas_data3" id="" aria-describedby="helpId" value="'.$x_value['dias_semana'].'">
+
+     
+
+        <input type="hidden" class="form-control" name="dias_id" id="" aria-describedby="helpId" value="'.$x_value['dias_id'].'">
+      
+        <input type="hidden" class="form-control" name="listas_data4" id="" aria-describedby="helpId" value="***">
+      
+        <input type="hidden" class="form-control" name="retorno" id="" aria-describedby="helpId" value="'.current_url().'">
+
+        <div class="form-group">
+              <select name="clases_id" id="clase" onChange="enableSubmit(this,'.$x_value['dias_id'].')" class="custom-select">
+              <option value="" selected disabled>Selecciona:</option>';
+
+        //recibe las clases correspondientes (semana próxima)
+        $url='https://wendy.log99.es/index.php/A_atlo_horario/obtener_clases/'.$x_value['dias_id'];
+        $data = file_get_contents($url);
+        $clases_hoy = json_decode($data, true); 
+    
+        
+        foreach($clases_hoy as $x => $x_value){
+            echo'<option '.$x_value['clases_disabled'].' value="'.$x_value['clases_id'].'">'.substr($x_value['clases_hora'],0,5).' ('.$x_value['clases_tipo'].')</option>';
+        }
+
+        echo '
+            </select>
+            </div>
+                
+            </div>
+
+            <div class="card-footer text-muted">
+
+            <button onclick="return botonFuera();" disabled type="submit" name="bot'.$x_value['dias_id'].'" 
+            class=" btn btn-secondary btn-lg btn-block">'.$boton_etiqueta.'</button>
+
+            </form>
+            
+            </div>
+
+
+            </div>
+            </div>
+            
+
+
+</th>  
+    ';
+
+
+
+
+
+}
+
+
+//fin SEMANA PRÓXIMA
+
+?>

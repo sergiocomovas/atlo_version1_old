@@ -1,0 +1,27 @@
+{
+    "short_name": "Atlo",
+    "name": "Atlo Training Club Palma de Mallorca",
+    "display": "standalone",
+   
+    "theme_color": "#c5023c",
+    "background_color": "#900c3e",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/px48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/px96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/px192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "https://v1.atlo.es/index.php/home?launcher=true"
+}

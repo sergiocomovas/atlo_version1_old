@@ -1,0 +1,18 @@
+622667979
+--> julián campos.
+
+MIL HOJAS
+
+
+val_carita
+
+
+val_repor1	varchar(860)			
+val_repor2	varchar(860)			
+val_les1	varchar(860)			
+val_les2	varchar(860)			
+val_dud1	varchar(860)			
+val_dud2	varchar(860)			
+val_seg1	varchar(860)			
+val_seg2	varchar(860)			
+val_otros	varchar(860

@@ -1,0 +1,15 @@
+@media
+only screen 
+{
+ [class*="nav-tabs"] 
+  {
+    position: fixed;
+    z-index: 9;
+    background-color: #fff;
+    margin-top: -11%; }
+ 
+  [class*="tab-content"] 
+  {
+    margin-top: 5%; 
+}
+}

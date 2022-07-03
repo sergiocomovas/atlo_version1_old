@@ -1,0 +1,1 @@
+<p class=text-center>Datos actualizados correctamente <?php echo date("H:i:s")?> </p>

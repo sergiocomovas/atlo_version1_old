@@ -1,0 +1,194 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
+<!-- Article style section -->
+
+<div id='p_principal'></div>
+<div class="py-5 text-center bg-secondary w-100">
+    <div class="container" id="p_principal">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-light">
+                <small>TARIFA</small> Club. (2018)</h1>
+              <p>El Atlo Barbell Club es un box de entrenamientos situado en una travesía de la calle Son Noguera. Te queremos presentar nuestra primera tarifa de socio. Hasta el 30 de septiembre tenemos una promoción muy interesante para ti y queremos
+                <a
+                  href="#p_ofertas">que la conozcas</a>. Disfruta de nuestra mejor oferta, al mejor precio que te podemos dar y...
+                  <a href="#p_garantiaprecios">¡para siempre!</a>
+              </p>
+            </div>
+          </div>
+          <img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/image010.png"> </div>
+      </div>
+      <div class="alert alert-info my-2" role="alert">
+        <strong>
+          También disponible: <br>
+          <span class="badge badge-pill badge-warning">NUEVO</span> TARIFA PLUS: por 80€/mes. Clases ilimitadas.
+        </strong>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="">De lunes a viernes puedes escoger
+            <strong>hasta 2 clases</strong> de 'Cross Training'. Consulta nuestro   horario provisional Las clases comienzan a la hora indicada y tienen una duración base de unos 50 minutos. Puedes elegir quedarte un poco más, hasta los ~80 minutos, para completar las propuestas más exigentes de nuestro
+            <a href="#p_atp">
+              <strong>ATLO TRAINING PLAN</strong>
+            </a>. Sigue las recomendaciones de nuestros entrenadores para avanzar de la forma más segura y alcanzar tu objetivo fitness. Consulta el apartado
+            <a href="#p_latipica">'la típica clase'</a> para saber más.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/image021.png"> </div>
+      </div>
+      <div id="p_euroteams" class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="lead my-2">MEGAWOD</p>
+              <p class="text-left">Los sábados por la mañana es el día de la comunidad Atlo. Por eso reservamos este día para los entrenos más divertidos... ¡y duros! </p>
+              <p class="text-left">Este tipo de entreno está diseñado para todos los atletas sientan el furor del momento y que todos tengan un papel relevante su desarrollo puesto que -ojo- habrá que pensarse las estrategias a seguir. ¡Tu equipo te va a necesitar!</p>
+              <p
+                class="text-left">Aquí te pondrás a prueba bajo la protección de tu manada. Las risas están garantizadas. Después del entreno puedes recuperarte con una de las bebidas que te brindaremos desde el box.</p>
+                <p class="text-left">La Actividad 'EUROTEAMS' es de libre acceso para todos los socios que tengan una
+                  <small>TARIFA</small> Club. activa. Es más de una hora de clase y sin pagar un extra adicional.</p>
+
+
+                <p class="lead my-2">OTRAS VENTAJAS</p>
+                <img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/mas_ventajas.png">
+                <p class="text-left my-2">Las ventajas adicionales de esta tarifa incluyen un catálogo de mejoras
+                  <strong>que iremos mejorando</strong> a lo largo de estos meses.</p>
+                <dl class="row my-4 text-left">
+                  <dt class="col-sm-3" style="color:yellow;">EVENTOS DE TEMPORADA</dt>
+                  <dd class="col-sm-9">Desde Atlo organizamos eventos. Todos los socios están invitados. Estos eventos tienen siempre una finalidad didáctica para que aprendas algo más sobre el Cross Training, sus especialidades (skills, halterofilia, movilidad... ), la alimentación
+                    y coaching emocional para así augmentar tu salud y calidad de vida.
+                    <hr> </dd>
+                  <dt class="col-sm-3" style="color:yellow;">TARJETA DE VENTAJAS</dt>
+                  <dd class="col-sm-9">Nuestra misión es que, al pertenecer al Atlo, puedas obtener la categoría VIP y obtener ventajas a la hora de adquirir productos y servicios vía el catálogo de colaboradores del club. Estamos trabajando en ello para que pronto puedas
+                    disfrutar de esta ventaja adicional.
+                    <hr> </dd>
+                  <dt class="col-sm-3" id="p_garantiaprecios" style="color:yellow;">GARANTÍA DE PRECIOS</dt>
+                  <dd class="col-sm-9">La tarifa 2018 tiene fecha de caducidad. El 1 de enero 2019 subirá de precio -un poco- para los nuevos socios. Sin embargo, nosotros valoramos tu compromiso y te lo agradecemos de la siguiente manera: siempre pagarás la misma cuota mensual
+                    mientas sigas siendo un socio activo de nuestro club. Gracias por ser nuestro amigo.</dd>
+                </dl>
+                <p class="text-left my-2">Puedes contratar desde ya la
+                  <small>TARIFA</small> Club. haciendo
+                  <a href="#p_apuntate">una reserva</a> desde esta misma página web.</p>
+                <h5 class="text-left my-4">Atlo Barbell Club iniciará sus clases con regularidad a partir del 2 de julio con periodo anticipado de prueba durante las semanas previas con clases express para grupos reducidos.</h5>
+            </div>
+            <div class="col-md-4">
+
+<br>
+            <a name="" id=""  data-toggle="modal" data-target="#modelId" class="btn btn-secondary btn-sm" href="#" role="button" ><i class="far fa-calendar"></i> Ver Horario</a>
+
+
+              <br>
+              <a href="#p_atp">Pulsa aquí para conocer más sobre nuestros planes de entrenamiento.</a><br><br>
+
+              <h3>NUESTRAS CLASES</h3><br>
+
+              <figure> 
+                
+                <a href="#capa_TRAINING" onclick="mostrarDiv('capa_TRAINING')">
+
+
+                  <img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/image006.png">
+
+    
+                  <figcaption style="color:#FFA" class="figure-caption">TRAINING</figcaption>
+                
+                </a>
+              
+              </figure>
+
+              <div id="capa_TRAINING" style="display:none;">
+
+                  <br><br><br><img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/image0cf.png"><br><br>
+
+              </div>
+
+              <!--eventos de temporada-->
+
+              <figure> 
+                
+                  <a href="#capa_eventos_t" onclick="mostrarDiv('capa_eventos_t')">
+  
+  
+                    <img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/aaa_temporada.png">
+      
+                    <figcaption style="color:#FFA" class="figure-caption">EVENTOS DE TEMPORADA</figcaption>
+                  
+                  </a>
+                
+                </figure>
+  
+                <div id="capa_eventos_t" style="display:none;">
+  
+                    <br><br><br><img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/aaa_temporada_info.png"><br><br>
+  
+                </div>
+
+                <!--euroteams-->
+
+                <figure> 
+                
+                    <a href="#capa_euroteams" onclick="mostrarDiv('capa_euroteams')">
+    
+    
+                      <img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/aaa_euroteams.png">
+    
+        
+                      <figcaption style="color:#FFA" class="figure-caption">EUROTEAMS</figcaption>
+                    
+                    </a>
+                  
+                  </figure>
+    
+                  <div id="capa_euroteams" style="display:none;">
+    
+                      <br><br><br><img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/aaa_eurotems_info.png"><br><br>
+    
+                  </div>
+
+                  <!--euroteams-->
+
+                <figure> 
+                
+                    <a href="#capa_cafe" onclick="mostrarDiv('capa_cafe')">
+    
+    
+                      <img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/aaa_cafe.png">
+    
+        
+                      <figcaption style="color:#FFA" class="figure-caption">CLASE DE LAS 6 A.M.</figcaption>
+                    
+                    </a>
+                  
+                  </figure>
+    
+                  <div id="capa_cafe" style="display:none;">
+    
+                      <br><br><br><img class="img-fluid d-block" src="https://atlo.es/barbellclub/tarifaclub/assets/img/aaa_cafe_info.png">
+
+                      <p>Rango de Training Morning: escribe a <a href="mailto:barbellclub@atlo.es">barbellclub@atlo.es</a> </p>
+    
+                  </div>
+
+                  <!--fin de todo-->
+
+
+
+              
+
+              
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

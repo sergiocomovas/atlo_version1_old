@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es">    
+  <head>
+    <title>Mallorca Interbox</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+
+
+    <!-- css-->
+    <style>
+
+
+        .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:green;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 9;
+        }
+
+        .my-float{
+            margin-top:22px;
+        }
+        /* The side navigation menu */
+        .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        /* padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+
+        transition: margin-left .5s;
+        padding: 20px;
+        overflow-x: hidden;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+        
+    </style>
+
+  </head>
+  <body>
+
+
+  <h2 class="text-center">Ampliado hasta el día 12/03</h2>
+  <script src="//code.tidio.co/rw8ejnqen9fcf8qsma1iy27fj1ngxruz.js"></script>
+  <?php require_once('config.php'); ?>      
+  <form id="myForm" name="myForm" action="charge.php" method="post">
+ 
+  <div  id="container1" class="container">
+
+
+  <div class="row">
+      <div class="col-md-6 p-1 px-3">
+         
+      
+
+<div class="card">
+    <img class="card-img-top" src="Imagen1.png" alt="Card image cap">
+    <div class="card-body">
+        <h4 class="card-title">Estimada comunidad,</h4>
+        <p class="card-text">Como ya sabéis tenemos contratado una póliza de Seguros de Accidentes con la compañía <a href="https://www.segurartic.com/" targer="blank_">Segurartic</a>, la aseguradora especializada en modalidades deportivas del grupo Catalana Occidente, que cubre los posibles accidentes que puedan ocurrir en el Box o practicando nuestro deporte en las competiciones que organicemos o estén reconocidas por SF3. Ahora con descuento para vuestros atletas de hasta un 50%*. <br><br>
+        Esperamos celebréis como nosotros esta noticia y que sigáis practicando con nosotros éste, nuestro deporte, con un mayor nivel de tranquilidad e ilusión.<br><br>
+        
+    Atte,<br>
+    SF3
+    </p>
+    </div>
+    <ul class="m-1 border border-primary list-group list-group-flush">
+    
+    <li class="list-group-item"><h4 class="my-3"> COLABORAN EN ESTA PROMO </h4></li>
+        <li class="list-group-item"><i class="fas fa-minus"></i> Atlo Can Valero</li>
+        <li class="list-group-item"><i class="fas fa-minus"></i> Power Proyect</li>
+        
+    </ul> 
+</div>
+
+   <small><p class="my-3">*Precio fuera de promoción = 45€/año.</p></small>
+      </div>
+
+      <div class="col-md-6 p-1 px-3">
+
+        <p>Necesitaremos que leas esto antes de introducir tus datos:</p>  
+         
+         
+        <div class="alert alert-secondary" role="alert">
+            <p><strong>CONSENTIMIENTOS</strong></p>
+
+            <h5>SF3</h5>
+             <p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, le comunicamos que los datos que usted nos facilite quedarán incorporados y serán tratados en los ficheros titularidad de nuestra asociación con el fin de poder colaborar conjuntamente, así como para mantenerle informado sobre cuestiones relativas a nuestra actividad.</p>
+            <p>Mediante la firma del presente documento usted da su consentimiento expreso para que la SF3 pueda utilizar con este fin concreto los datos facilitados por usted, comprometiéndose a tratar de forma confidencial los datos de carácter personal facilitados y a no comunicar o ceder dicha información a terceros ajenos a nuestra actividad.<p>
+            <p>Asimismo, le informamos de la posibilidad que tiene de ejercer los derechos de acceso, rectificación, cancelación y oposición de sus datos de carácter personal mediante escrito, acompañado de fotocopia del DNI, dirigido a: SF3, Calle del Progreso nº2, Local 5. 28906 Madrid.</p>
+
+            <h5>Mallorca Interbox</h5>
+       
+            <p>Recuerda que, en virtud de la ley orgánica anteriormente descrita, tienes derecho de solicitud, rectificación, anulación de datos y de derecho al olvido, por ello, autorizas a tratar los datos proporcionados a tales fines. Puedes ponerte en contacto con <a href="mailto:sergio@mallorcainterbox.com">sergio@mallorcainterbox.com</a> o a través de nuestra dirección LOPD en MALLORCA INTERBOX: CARRER CAN VALERO 31 (NAVE 8) PALMA DE MALLORCA.
+
+            </p>
+            
+
+        </div>
+
+        <div class="form-group">
+        <label for="telefono"><i class="fas fa-mobile-alt"></i> Escribe tu número de móvil</label>
+        <input type="number" required
+            class="form-control" min="600000000" max="999999999" maxlength="9" name="telefono" id="telefono" aria-describedby="helpTelefono" placeholder="600000000">
+        <small id="helpTelefono" class="form-text text-muted">No escribas el prefijo <code>+34</code></small>
+        </div>
+
+
+        <div class="form-group">
+        <label for="box"><i class="fas fa-warehouse"></i> Tu box</label>
+        <select class="form-control" name="box" id="box" required>
+            <option disabled selected>SELECCIONA</option>
+            <option value="AtloCV">Atlo Can Valero</option>
+            <option value="PProject">Power Project</option>
+            <option disabled value="HummerI">HummerBox Inca</option>
+        </select>
+        </div>
+
+
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="" id="" value="checkedValue" checked> Producto contratado: 
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Importe</th>
+                            <th>Seguro</th>
+                            <th>Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Ficha de Atleta</td>
+                            <td>25€</td>
+                            <td>Incluído</td>
+                            <td><i class="fab fa-cc-stripe"></i></td>
+                        </tr>
+                                            </tbody>
+                </table>
+            </label>
+                </div>
+
+
+        <p class="text-danger"><i id="flecha" class="fas fa-arrow-down"></i><div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input required class="form-check-input" type="checkbox" name="check" id="check" value="checkedValue"> <strong>AUTORIZO A ‘MALLORCA INTERBOX’ A LA TRAMITACIÓN E INGRESO DE MI FICHA FEDERATIVA ANTE LA SF3.</strong></div></p>
+                    <br>
+    <h6 id="demo3" class="text-dark">No te olvides de marcar <a class="text-danger" onclick="grande()" href="#flecha">la casilla de verificación</a>.</h6>
+
+    <button onclick="openNav()" type="button" class="btn btn-success btn-lg btn-block">Siguiente paso...</button>  
+
+    <br><br>
+    
+    
+          
+    </div>
+
+  </div>
+  </div><!--fin del container-->
+
+    <!--<a onclick="openNav()" href="#" id="float" class="float">
+       <i class="fas fa-arrow-right my-float"></i>
+    </a>-->
+          
+    <!-- SIDE NAV-->
+    <div id="mySidenav" class="sidenav">
+        
+        <div style="position: relative; top: 0;
+        border: 3px solid blue;" id="divCanvas">
+        
+        </div>
+
+        <p class="text-primary text-center p-2">Firme en el recuadro azul.
+        </p>
+
+        <div id="firmar" class="p-1">
+        <input style="" type="button" id="submit1" name="submit1" value="Continuar" onclick="amijo()"
+             class="btn-lg btn-block btn btn-success">
+        
+            
+
+            <div id="divLog"></div>
+            <div id="divSignature"></div>
+    
+          
+        </div>           
+       
+        
+
+        <div id="pagar" style="display: none;" class="p-1 bg-primary">
+         
+        <p><strong>Compruebe sus datos:</strong><br>
+        SU TELF: <kbd id="demo1"></kbd><br>
+        SU BOX: <kbd id="demo2"></kbd></p>
+
+    
+        
+        <input type="hidden" name="casilla" id="casilla" class="form-control" id="casilla" placeholder="">
+        
+        
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<?php echo $stripe['publishable_key']; ?>"
+                data-description="SF3 ficha federativa (1 año)"
+                data-amount="2500"
+                data-label="Pagar ahora €25.-  (con tarjeta)"
+                data-name="SF3/Mallorca Interbox"
+                data-billing-address = "true"
+                data-currency="EUR"
+                data-panel-label="Pagar {{amount}}"
+                data-locale="es"></script>
+        </div>
+
+        <a class="mt-3" href="."><h6>Cancelar/Repetir</h6></a>
+    
+
+    
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--abrir nav-->
+    <script>
+
+        function grande() {
+
+            document.getElementById("flecha").classList.add('fa-3x');
+
+
+
+        }
+        function openNav() {
+
+            var $myForm = $('#myForm');
+
+            if( $myForm[0].checkValidity()) {
+                // If the form is invalid, submit it. The form won't actually submit;
+                // this will just cause the browser to display the native HTML5 error messages.
+
+                document.getElementById('container1').style.display = 'none';
+                
+                document.getElementById("mySidenav").style.width = "287px";
+                document.getElementById("main").style.marginLeft = "300px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                document.getElementById("main").style.display = "none";
+                document.getElementById("float").style.display = "none";
+            }else{
+                document.getElementById("demo3").innerHTML = "<h4 class='text-danger' id='demo3'>Hay un error en el formulario: Mira de escribir tu telf. correctamente, selecciona tu box y marca la <a href='#flecha'>casilla de verificación.</a></h4>"
+
+                
+                document.getElementById("flecha").classList.add('fa-4x');
+            }
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+    <script src="https://v1.atlo.es/01_js/firma/firma.js"></script>
+    <script>
+
+        function amijo(){
+
+            captureData();
+            
+            //ocultar div
+
+            document.getElementById('pagar').style.display='block';
+            document.getElementById('firmar').style.display='none';
+            
+            
+
+            //inners html
+             
+            document.getElementById("demo2").innerHTML =  document.getElementById("box").value;
+
+            document.getElementById("demo1").innerHTML =  document.getElementById("telefono").value;
+            
+            
+            //mostrar div
+
+            
+        }
+
+    </script>
+
+</form>
+  </body>
+</html>
