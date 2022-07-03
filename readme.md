@@ -12,3 +12,8 @@ ULTIMO LOG DE CAMBIO
 ![D7](https://palmabot.comovas.es/ultimocambioatlo/Diapositiva7.PNG)
 ![D8](https://palmabot.comovas.es/ultimocambioatlo/Diapositiva8.PNG)
 ![D9](https://palmabot.comovas.es/ultimocambioatlo/Diapositiva9.PNG)
+
+
+<a href="https://drive.google.com/drive/folders/1WDBh_xemK1-0Kpw1anxSdfcgOvEkNNIQ?usp=sharing">Ver infografias</a>
+
+TODO EL MATERIAL por SERGIO RIGO.
